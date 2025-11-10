@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 30px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>welcome to the Little Car ShowRoom</h1>
+        <ul>
+            <li><a href="index.html">About car</a></li>
+            <li><a href="index2.html">store</a></li>
+            <li><a href="index3.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <main>
+        <img src="./img/car-cars-lamborghini-aventador-63764.jpg" alt="car logo" style="height: 400px;">
+        <hr>
+
+        &nbsp;
+        <h2>Our Contact Form</h2>
+
+        <form  id="contactForm">
+            <fieldset>
+                <legend>Send Us A Message</legend>
+                <p>
+                    <label for="name">Name : </label>
+                    <input type="text" name="name" id="name" placeholder="Enter the Name">
+                </p>
+                <p>
+                    <label for="email">Email : </label>
+                    <input type="text" email="email" id="email" placeholder="Enter the Email">
+                </p>
+                <p>
+                    <textarea name="meg" id="meg" placeholder="Your Message"></textarea>
+                </p>
+            </fieldset>
+            <div>
+                <span><button>Submit</button></span>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h3>Our Location</h3>
+        <p>555a,Osaravilai,puthalam Post,</p>
+        <p><i>Nagercovil (Near Water TankRoad)</i></p>
+        <p>Ph : 45455 677888</p>
+    </footer>
+    <script>
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert(' Message sent successfully!');
+            form.reset();
+        });
+    </script>
+
+</body>
+
+</html>
